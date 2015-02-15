@@ -1,0 +1,13 @@
+<% provide(:title, 'Player Index') %>
+<h1>Players</h1>
+
+    <!-- <a href="/items/3">Sleeping bag</a> -->
+    <%# link_to "Google's Homepage", "http://www.google.com/" %>
+    <!-- <a href="/items/<%# item.id %>"><%# item.name %></a> -->
+<ul>
+  <% @players.each do |item| %>
+    <li>
+      <%= link_to player.name, player_path(player.id) %> | 
+    </li>
+  <% end %>
+</ul>
