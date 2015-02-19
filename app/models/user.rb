@@ -1,6 +1,5 @@
 class User < ActiveRecord::Base
   before_save { email.downcase! }
-
   has_many :players
 
   validates :name, presences: true, length: { minimum: 3, maximum: 254 }
