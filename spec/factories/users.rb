@@ -1,8 +1,7 @@
 FactoryGirl.define do
-  factory :team do
+  factory :user do
     name "MyString"
-fullname "MyString"
-team_id 1
+email "MyString"
   end
 
 end
